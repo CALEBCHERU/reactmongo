@@ -1,0 +1,35 @@
+#notification{
+    position: relative;
+    font-weight: bold;
+    padding: 3px;
+    justify-content: space-around;
+    gap: 20px;
+}
+#num{
+    position: absolute;
+    top: -5px;
+    /* left: -5px; */
+    color: #000;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 18px;
+    /* padding: 2px; */
+    padding-left: 8px;
+    padding-right: 8px;
+}
+#nail{
+    gap: 30px;
+    
+}
+a{
+    font-size: 25px;
+}
+a:hover{
+    opacity: 50%;
+}
+#cont{
+    
+}
+#topbar{
+    justify-content: center;
+}

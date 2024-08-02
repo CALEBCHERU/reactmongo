@@ -6,58 +6,54 @@ import polog from "../images/polog.jpg"
 
 export default function Topbar() {
   return (
-    <div className="topbarContainer " id="cont">
-      <div
-        id="topbar"
-        className=" navbar navbar-expand-md  bg-primary navbar-dark rounded-2 justify-content-around flex-shrink-0"
-      >
-        <div className="">
-          <a className="nav text-white text-decoration-none" href="#">
-            {" "}
-            <h2>Majaliwasocial</h2>{" "}
+    <div className="topbarContainer">
+      <nav className="navbar navbar-expand-md bg-primary navbar-dark rounded-2 justify-content-around flex-shrink-0">
+        <div>
+          <a className="navbar-brand text-white" href="#">
+            <h2>Majaliwasocial</h2>
           </a>
         </div>
-        <div className="">
-          <form class="">
+        <div className="d-flex">
+          <form className="d-flex">
             <input
-              class="form-form-control-lg  me-5 rounded-5 px-5 py-2 "
+              className="form-control form-control-lg me-5 rounded-pill px-5 py-2"
               type="text"
               placeholder="Search"
-            ></input>
+            />
           </form>
         </div>
-        <div className="">
-          <a className="text-white text-decoration-none p-2" href="#">
+        <div className="d-flex">
+          <a className="nav-link text-white" href="#">
             HomePage
           </a>
-          <a className="text-white text-decoration-none" href="#">
+          <a className="nav-link text-white" href="#">
             Timeline
           </a>
         </div>
-        <div className="">
-            <div id="notification" className="d-flex  ">
-                <div id="nail" className="d-flex ">
-                    <i class="bi bi-person-fill"></i>
-                    <span id="num">1</span>
-                </div>
-                <div id="nail" className="d-flex">
-                    <i class="bi bi-chat-dots"></i>
-                    <span id="num" class="num" className="topbarIconBadge">
-                        2
-                    </span>
-                </div>
-                <div id="nail" className="d-flex">
-                    <i class="bi bi-bell"></i>
-                    <span id="num" class="num" className="topbarIconBadge">
-                        3
-                    </span>
-                </div>
-
+        <div className="d-flex align-items-center">
+          <div className="d-flex">
+            <div className="position-relative me-3">
+              <i className="bi bi-person-fill text-white"></i>
+              <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                1
+              </span>
             </div>
+            <div className="position-relative me-3">
+              <i className="bi bi-chat-dots text-white"></i>
+              <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                2
+              </span>
+            </div>
+            <div className="position-relative">
+              <i className="bi bi-bell text-white"></i>
+              <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                3
+              </span>
+            </div>
+          </div>
         </div>
         <img src={polog} alt="polog" height="50px" className="rounded-5" />
-
-      </div>
+      </nav>
     </div>
   );
 }
